@@ -12,9 +12,11 @@
 		16A09247201676D20047D3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A09245201676D20047D3CC /* Main.storyboard */; };
 		16A09249201676D20047D3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A09248201676D20047D3CC /* Assets.xcassets */; };
 		16A0924C201676D20047D3CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A0924A201676D20047D3CC /* LaunchScreen.storyboard */; };
+		57A98DC6CF70898676B06471 /* Pods_s_mount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B939CC6AE2178FE8C2F00E53 /* Pods_s_mount.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		076EDCE1E7F15C6C353B49CC /* Pods-s-mount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-s-mount.release.xcconfig"; path = "Pods/Target Support Files/Pods-s-mount/Pods-s-mount.release.xcconfig"; sourceTree = "<group>"; };
 		16A0923E201676D20047D3CC /* s-mount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "s-mount.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A09241201676D20047D3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A09243201676D20047D3CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		16A09248201676D20047D3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16A0924B201676D20047D3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16A0924D201676D20047D3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584BAF0ABDEFEF2E572726FB /* Pods-s-mount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-s-mount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-s-mount/Pods-s-mount.debug.xcconfig"; sourceTree = "<group>"; };
+		B939CC6AE2178FE8C2F00E53 /* Pods_s_mount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_s_mount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A98DC6CF70898676B06471 /* Pods_s_mount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				16A09240201676D20047D3CC /* s-mount */,
 				16A0923F201676D20047D3CC /* Products */,
+				F4A0D7AB1435A651F2E77426 /* Pods */,
+				7112CF852DB7D631886634E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "s-mount";
 			sourceTree = "<group>";
 		};
+		7112CF852DB7D631886634E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B939CC6AE2178FE8C2F00E53 /* Pods_s_mount.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A0D7AB1435A651F2E77426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				584BAF0ABDEFEF2E572726FB /* Pods-s-mount.debug.xcconfig */,
+				076EDCE1E7F15C6C353B49CC /* Pods-s-mount.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A09250201676D20047D3CC /* Build configuration list for PBXNativeTarget "s-mount" */;
 			buildPhases = (
+				E0B7541BB171178080176EAB /* [CP] Check Pods Manifest.lock */,
 				16A0923A201676D20047D3CC /* Sources */,
 				16A0923B201676D20047D3CC /* Frameworks */,
 				16A0923C201676D20047D3CC /* Resources */,
+				9E56D5F18209F3BAB81CA44E /* [CP] Embed Pods Frameworks */,
+				944520F6509F2F18B8CC2484 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		944520F6509F2F18B8CC2484 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-s-mount/Pods-s-mount-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E56D5F18209F3BAB81CA44E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-s-mount/Pods-s-mount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B7541BB171178080176EAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16A0923A201676D20047D3CC /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		16A09251201676D20047D3CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584BAF0ABDEFEF2E572726FB /* Pods-s-mount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		16A09252201676D20047D3CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076EDCE1E7F15C6C353B49CC /* Pods-s-mount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

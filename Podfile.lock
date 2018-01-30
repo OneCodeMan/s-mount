@@ -1,0 +1,15 @@
+PODS:
+  - DynamicColor (4.0.2)
+  - SwiftLint (0.24.2)
+
+DEPENDENCIES:
+  - DynamicColor (~> 4.0.2)
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
+  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
+
+PODFILE CHECKSUM: a003a6a5907b28a596f264d14d5921e18525fbd5
+
+COCOAPODS: 1.2.1
