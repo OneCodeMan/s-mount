@@ -8,5 +8,6 @@ target 's-mount' do
   # Pods for s-mount
   pod 'DynamicColor', '~> 4.0.2'
   pod 'SwiftLint'
+  pod 'BEMCheckBox'
 
 end

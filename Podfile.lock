@@ -1,15 +1,18 @@
 PODS:
+  - BEMCheckBox (1.4.1)
   - DynamicColor (4.0.2)
   - SwiftLint (0.24.2)
 
 DEPENDENCIES:
+  - BEMCheckBox
   - DynamicColor (~> 4.0.2)
   - SwiftLint
 
 SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
   SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
-PODFILE CHECKSUM: a003a6a5907b28a596f264d14d5921e18525fbd5
+PODFILE CHECKSUM: f6539cdb6adb56c0fca6f2a4e7f48a8fc89609bf
 
 COCOAPODS: 1.2.1

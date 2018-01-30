@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SelectionViewController.swift
 //  s-mount
 //
 //  Created by Dave Gumba on 2018-01-22.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SelectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
 }
-
