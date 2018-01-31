@@ -30,7 +30,7 @@ extension SessionViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MoveCell", for: indexPath)
-        cell.textLabel?.text = "yo"
+        cell.textLabel?.text = ""
         return cell
     }
     
