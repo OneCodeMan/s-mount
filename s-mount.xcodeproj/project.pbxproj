@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16401888202126CE00FDE184 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16401887202126CE00FDE184 /* CustomButton.swift */; };
+		1640188A202160CA00FDE184 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16401889202160CA00FDE184 /* SessionViewController.swift */; };
 		16A09242201676D20047D3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A09241201676D20047D3CC /* AppDelegate.swift */; };
 		16A09244201676D20047D3CC /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A09243201676D20047D3CC /* SelectionViewController.swift */; };
 		16A09247201676D20047D3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A09245201676D20047D3CC /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		076EDCE1E7F15C6C353B49CC /* Pods-s-mount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-s-mount.release.xcconfig"; path = "Pods/Target Support Files/Pods-s-mount/Pods-s-mount.release.xcconfig"; sourceTree = "<group>"; };
 		16401887202126CE00FDE184 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		16401889202160CA00FDE184 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		16A0923E201676D20047D3CC /* s-mount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "s-mount.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A09241201676D20047D3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A09243201676D20047D3CC /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				16401886202126AD00FDE184 /* Extensions */,
 				16A09241201676D20047D3CC /* AppDelegate.swift */,
 				16A09243201676D20047D3CC /* SelectionViewController.swift */,
+				16401889202160CA00FDE184 /* SessionViewController.swift */,
 				16A09245201676D20047D3CC /* Main.storyboard */,
 				16A09248201676D20047D3CC /* Assets.xcassets */,
 				16A0924A201676D20047D3CC /* LaunchScreen.storyboard */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A09244201676D20047D3CC /* SelectionViewController.swift in Sources */,
+				1640188A202160CA00FDE184 /* SessionViewController.swift in Sources */,
 				16A09242201676D20047D3CC /* AppDelegate.swift in Sources */,
 				16401888202126CE00FDE184 /* CustomButton.swift in Sources */,
 			);
