@@ -12,8 +12,9 @@ import DynamicColor
 class SessionViewController: UIViewController {
     
     @IBOutlet weak var movesTableView: UITableView!
-    
     @IBOutlet weak var frequencyView: UIView!
+    
+    let grapplingMoves = GrapplingMoves()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,8 @@ class SessionViewController: UIViewController {
         movesTableView.delegate = self
         movesTableView.dataSource = self
         
-        let frequencyViewTopBorderColor = DynamicColor(hex: 0x3498db)
-        frequencyView.addBorder(toSide: .Top, withColor: frequencyViewTopBorderColor.cgColor)
+        let frequencyViewTopBorderColor = DynamicColor(hex: 0x08085E)
+        frequencyView.addBorder(toSide: .Top, withColor: frequencyViewTopBorderColor.cgColor, withThickness: 1.0)
         
     }
 
@@ -35,8 +36,11 @@ extension SessionViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MoveCell", for: indexPath)
-        cell.textLabel?.text = ""
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MoveCell", for: indexPath) as! MoveCell
+        
+        cell.moveNameLabel?.text = grapplingMoves.movesList[indexPath.row].moveName
+        cell.moveDescriptionLabel?.text = grapplingMoves.movesList[indexPath.row].moveDescription
+        
         return cell
     }
     

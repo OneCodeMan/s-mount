@@ -9,7 +9,7 @@ extension UIView {
         case Left, Right, Top, Bottom
     }
     
-    func addBorder(toSide side: ViewSide, withColor color: CGColor, withThickness thickness: CGFloat = 1.0) {
+    func addBorder(toSide side: ViewSide, withColor color: CGColor, withThickness thickness: CGFloat) {
         
         let border = CALayer()
         border.backgroundColor = color

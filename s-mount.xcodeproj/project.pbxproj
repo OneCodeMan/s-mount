@@ -10,6 +10,9 @@
 		160BE57520239460004FBF9D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160BE57420239460004FBF9D /* UIViewExtension.swift */; };
 		16401888202126CE00FDE184 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16401887202126CE00FDE184 /* CustomButton.swift */; };
 		1640188A202160CA00FDE184 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16401889202160CA00FDE184 /* SessionViewController.swift */; };
+		167357C420239947007EB623 /* GrapplingMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167357C320239947007EB623 /* GrapplingMoves.swift */; };
+		167357C920239994007EB623 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167357C820239994007EB623 /* Move.swift */; };
+		167357CC20239BBF007EB623 /* MoveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167357CB20239BBF007EB623 /* MoveCell.swift */; };
 		16A09242201676D20047D3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A09241201676D20047D3CC /* AppDelegate.swift */; };
 		16A09244201676D20047D3CC /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A09243201676D20047D3CC /* SelectionViewController.swift */; };
 		16A09247201676D20047D3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A09245201676D20047D3CC /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		160BE57420239460004FBF9D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		16401887202126CE00FDE184 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		16401889202160CA00FDE184 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		167357C320239947007EB623 /* GrapplingMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapplingMoves.swift; sourceTree = "<group>"; };
+		167357C820239994007EB623 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		167357CB20239BBF007EB623 /* MoveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCell.swift; sourceTree = "<group>"; };
 		16A0923E201676D20047D3CC /* s-mount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "s-mount.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A09241201676D20047D3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A09243201676D20047D3CC /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		167357C220239935007EB623 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				167357C320239947007EB623 /* GrapplingMoves.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		167357C72023998B007EB623 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				167357C820239994007EB623 /* Move.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		167357CA20239B8D007EB623 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				167357CB20239BBF007EB623 /* MoveCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		16A09235201676D20047D3CC = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +106,9 @@
 		16A09240201676D20047D3CC /* s-mount */ = {
 			isa = PBXGroup;
 			children = (
+				167357CA20239B8D007EB623 /* View */,
+				167357C72023998B007EB623 /* Model */,
+				167357C220239935007EB623 /* Data */,
 				16401886202126AD00FDE184 /* Extensions */,
 				16A09241201676D20047D3CC /* AppDelegate.swift */,
 				16A09243201676D20047D3CC /* SelectionViewController.swift */,
@@ -228,11 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167357CC20239BBF007EB623 /* MoveCell.swift in Sources */,
 				160BE57520239460004FBF9D /* UIViewExtension.swift in Sources */,
+				167357C920239994007EB623 /* Move.swift in Sources */,
 				16A09244201676D20047D3CC /* SelectionViewController.swift in Sources */,
 				1640188A202160CA00FDE184 /* SessionViewController.swift in Sources */,
 				16A09242201676D20047D3CC /* AppDelegate.swift in Sources */,
 				16401888202126CE00FDE184 /* CustomButton.swift in Sources */,
+				167357C420239947007EB623 /* GrapplingMoves.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
