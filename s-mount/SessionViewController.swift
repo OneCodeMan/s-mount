@@ -40,6 +40,7 @@ extension SessionViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.moveNameLabel?.text = grapplingMoves.movesList[indexPath.row].moveName
         cell.moveDescriptionLabel?.text = grapplingMoves.movesList[indexPath.row].moveDescription
+        cell.moveCheckBox?.on = false
         
         return cell
     }
