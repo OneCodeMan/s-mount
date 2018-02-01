@@ -427,6 +427,7 @@
                         <viewLayoutGuide key="safeArea" id="87a-lu-uuO"/>
                     </view>
                     <connections>
+                        <outlet property="frequencyView" destination="VOt-f2-Ic9" id="MOu-Px-IqP"/>
                         <outlet property="movesTableView" destination="Zuu-fJ-cmh" id="YVb-IK-c1l"/>
                     </connections>
                 </viewController>

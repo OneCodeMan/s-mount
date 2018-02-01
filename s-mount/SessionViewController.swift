@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import DynamicColor
 
 class SessionViewController: UIViewController {
     
     @IBOutlet weak var movesTableView: UITableView!
+    
+    @IBOutlet weak var frequencyView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         movesTableView.delegate = self
         movesTableView.dataSource = self
+        
+        let frequencyViewTopBorderColor = DynamicColor(hex: 0x3498db)
+        frequencyView.addBorder(toSide: .Top, withColor: frequencyViewTopBorderColor.cgColor)
         
     }
 
