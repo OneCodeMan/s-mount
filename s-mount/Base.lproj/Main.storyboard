@@ -316,7 +316,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-z5-y34" customClass="BEMCheckBox">
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-z5-y34" customClass="BEMCheckBox">
                                                         <rect key="frame" x="43" y="30" width="40" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -364,7 +364,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-2W-ltH" customClass="BEMCheckBox">
+                                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-2W-ltH" customClass="BEMCheckBox">
                                                         <rect key="frame" x="43" y="30" width="40" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -435,6 +435,9 @@
                     <connections>
                         <outlet property="frequencyView" destination="VOt-f2-Ic9" id="MOu-Px-IqP"/>
                         <outlet property="movesTableView" destination="Zuu-fJ-cmh" id="YVb-IK-c1l"/>
+                        <outlet property="notOftenCheckBox" destination="rVL-Df-bkZ" id="5vO-bd-6qG"/>
+                        <outlet property="oftenCheckBox" destination="e5Y-z5-y34" id="iYx-p4-Iat"/>
+                        <outlet property="veryOftenCheckBox" destination="q0E-2W-ltH" id="mSK-Bj-OrG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVb-us-UvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
